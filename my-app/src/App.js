@@ -7,12 +7,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <header className="App-header">
+      <main className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h2>
           Hello React !
         </h2>
-      </header>
+      </main>
       <Footer />
     </div>
   );
