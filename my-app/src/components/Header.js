@@ -1,8 +1,8 @@
 import React from 'react';
-import logoHeader from './img/logo.png';
-import facebook from './img/facebook.png';
-import line from './img/line.png';
-import twitter from './img/twitter.png';
+import logoHeader from './../img/logo.png';
+import facebook from './../img/facebook.png';
+import line from './../img/line.png';
+import twitter from './../img/twitter.png';
 
 class Header extends React.Component {
   render() {
@@ -17,13 +17,13 @@ class Header extends React.Component {
           <div className="navbar">
             <ul className="nav-list">
               <li className="nav-item">
-                <a href="#">Menu1</a>
+                <a href="#">Home</a>
               </li>
               <li className="nav-item">
-                <a href="#">Menu2</a>
+                <a href="#">About</a>
               </li>
               <li className="nav-item">
-                <a href="#">Menu3</a>
+                <a href="#">Contact</a>
               </li>
             </ul>
           </div>
