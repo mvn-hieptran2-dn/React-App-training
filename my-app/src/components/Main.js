@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import From from './Form';
 import Circle from './Circle';
+import { from } from 'zen-observable';
 
 class Main extends Component {
   constructor(props) {
@@ -18,20 +20,7 @@ class Main extends Component {
     return (
       <main className="page-main">
         <div className="container">
-          <div className="main-wrap">
-            <div className="btn-list">
-              <button onClick={() => this.handleChangePage('home')}>HOME</button>
-              <button onClick={() => this.handleChangePage('about')}>ABOUT</button>
-            </div>
-            {(page === 'home') &&
-              <ul className="circle-list">
-                <Circle number={50} size={50} />
-                <Circle number={40} size={50} />
-                <Circle number={30} size={50} />
-              </ul>
-            }
-            {(page === 'about') && <div>About page</div>}
-          </div>
+          <From />
         </div>
       </main>
     );
