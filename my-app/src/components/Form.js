@@ -126,7 +126,7 @@ class Form extends React.Component {
               <tr>
                 <th>ID</th>
                 <th>Email Address</th>
-                <th className="txt-center">Skill</th>
+                <th className="txt-center">Country</th>
                 <th className="txt-center">Gender</th>
                 <th>Info</th>
                 <th className="txt-center">Actions</th>
