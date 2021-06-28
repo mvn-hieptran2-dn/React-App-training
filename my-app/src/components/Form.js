@@ -78,11 +78,13 @@ class Form extends React.Component {
             <div className="form-select">
               <select name="country" value={form.country} onChange={this.handleChange}>
                 <option value="">Please choose</option>
-                <option value="Angular">Angular</option>
-                <option value="React">React</option>
-                <option value="Vue">Vue</option>
-                <option value="PHP">PHP</option>
-                <option value="Android">Android</option>
+                <option value="Viet Nam">Viet Nam</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Korea">Korea</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Italy">Italy</option>
               </select>
             </div>
           </div>
