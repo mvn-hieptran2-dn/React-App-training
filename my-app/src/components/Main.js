@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FormHooks from './FormHooks';
+import UserEffectAPI from './UserEffectAPI';
 
 class Main extends Component {
   render() {
@@ -7,7 +7,7 @@ class Main extends Component {
     return (
       <main className="page-main">
         <div className="container">
-          <FormHooks />
+          <UserEffectAPI />
         </div>
       </main>
     );

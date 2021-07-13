@@ -32,6 +32,10 @@ a {
   margin: 0 auto;
 }
 
+.d-flex {
+  display: flex;
+}
+
 /* Header */
 .header-page {
   height: 90px;
@@ -114,7 +118,7 @@ a {
 .page-main {
   padding: 100px 0;
 }
-button {
+/* button {
   color: #000;
   font-size: 16px;
   padding: 5px 20px;
@@ -125,7 +129,7 @@ button {
   border: 1px solid #61daf9;
   background-color: #61daf9;
   box-shadow: 2px 2px 4px #b1b1b1;
-}
+} */
 
 button:hover {
   cursor: pointer;
@@ -342,7 +346,7 @@ table th {
   padding-top: 8px;
   padding-bottom: 8px;
   color: #0F3661;
-  font-weight: 400;
+  /* font-weight: 400; */
   white-space: nowrap;
 }
 
@@ -361,3 +365,38 @@ table th {
   width: 100%;
 }
 
+/* UserEffect */
+.thumb-img {
+  width: 90px;
+  height: 90px;
+  display: flex;
+}
+.thumb-img .avatar {
+  width: 100%;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.list-page {
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.list-page li button {
+  margin: 0 5px;
+  height: 30px;
+}
+
+.list-page .num-page button {
+  width: 30px;
+  line-height: 30px;
+}
+
+.list-page li .active { 
+  background-color: #61daf9;
+
+}
