@@ -4,7 +4,9 @@ const HeroBanner = () => {
   return (
     <section className="section-hero-banner">
       <div className="container">
-        <h2>Wellcome to Car Dealer</h2>
+        <div className="content-banner">
+          <h2>Wellcome to Car Dealer</h2>
+        </div>
       </div>
     </section>
   );

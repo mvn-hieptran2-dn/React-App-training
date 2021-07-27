@@ -1,15 +1,13 @@
 .footer-page {
-  height: 60px;
-  background-color: #b3b3b3;
+  height: 80px;
+  background-color: map-get($colors, header);
   p {
-    line-height: 60px;
+    @include pxRem(font-size, 20);
+    @include pxRem(line-height, 80);
+    color:  map-get($colors, white);
   }
-}
-
-.coppyright {
-  float: left;
-}
-
-.create-by {
-  float: right;
+  .footer-box {
+    display: flex;
+    justify-content: space-between;
+  }
 }

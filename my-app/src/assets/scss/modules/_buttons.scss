@@ -1,15 +1,31 @@
-button {
-  color: #000;
-  font-size: 16px;
-  padding: 5px 20px;
-  text-align: center;
-  border-radius: 5px;
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid #61daf9;
-  background-color: #61daf9;
-  box-shadow: 2px 2px 4px #b1b1b1;
-  &:hover {
-    cursor: pointer;
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  height: 40px;
+  color: map-get($colors, white);
+  line-height: 1;
+  cursor: pointer;
+  transition: background 400ms ease;
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background: map-get($colors, primary);
+  width: 100%;
+}
+.btn-transparent {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  i {
+    font-size: 18px;
   }
+}
+.btn-secondary {
+  width: 280px;
+  border-radius: 30px;
+  background: map-get($colors, secondary);
 }

@@ -13,8 +13,6 @@ const useAuth = () => {
         setUser({email});
         setIsLogged(true);
         history.push('/account');
-        console.log(email);
-        console.log(password);
         res({email});
       }, 1000);
     });
@@ -23,7 +21,7 @@ const useAuth = () => {
   const logout = () => {
     localStorage.removeItem('user');
     setIsLogged(false);
-    history.push('/');
+    history.push('auth/login');
   }
   return {login, isLogged, logout};
 }

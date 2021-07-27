@@ -3,24 +3,24 @@ import AboutUs from './AboutUs';
 import Products from './Products';
 import ProductDetail from './ProductDetail';
 import Home from './Home';
-import { Switch, Router } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 const Features = () => {
   return (
     <>
       <Switch>
-        <Router path="/products/:id">
+        <Route path="/product/:id">
           <ProductDetail />
-        </Router>
-        <Router path="/products">
+        </Route>
+        <Route path="/products">
           <Products />
-        </Router>
-        <Router path="/about-us">
+        </Route>
+        <Route path="/about-us">
           <AboutUs />
-        </Router>
-        <Router path="/">
+        </Route>
+        <Route path="/">
           <Home />
-        </Router>
+        </Route>
       </Switch>
     </>
   );

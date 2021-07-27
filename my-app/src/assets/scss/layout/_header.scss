@@ -1,58 +1,50 @@
 .header-page {
   height: 90px;
-  background-color: #b3b3b3;
+  background-color: map-get($colors, header);
+  .social-list {
+    display: flex;
+    a {
+      @include pxRem(font-size, 26);
+      @include pxRem(padding, 0 5);
+      color: map-get($colors, white);
+    }
+  }
 }
 
-.logo-header {
-  max-width: 100px;
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logo-header img {
-  width: 100%;
-}
-
-.navbar,
-.header-logo,
-.header-share {
-  vertical-align: middle;
-  display: inline-block;
-  width: 33.33%;
-}
-
-.share-list img {
-  background-color: white;
-  border-radius: 50%;
-}
-
-.header-logo img {
-  float: left;
-}
-
-.navbar li {
-  line-height: 90px;
-  padding: 0 15px;
-  display: inline-block;
-}
-
-.navbar li a {
-  font-size: 18px;
-  color: black;
-  transition: all ease-in-out .4s;
-}
-
-.navbar li a:hover {
-  color: #61daf9;
-}
-
-.header-share ul {
-  float: right;
-}
-
-.header-share li {
-  padding: 0 5px;
-  display: inline-block;
-}
-
-.header-share li img {
-  max-width: 40px;
+.navbar {
+  .nav-list {
+    display: flex;
+  }
+  .nav-item {
+    @include pxRem(line-height, 90);
+    @include pxRem(padding, 0 15);
+    a {
+      @include pxRem(font-size, 24);
+      position: relative;
+      color: map-get($colors, white);
+      transition: all ease-in-out .4s;
+      &.active {
+        // color: map-get($colors, primary);
+        &::after {
+          position: absolute;
+          bottom: -5px;
+          height: 2px;
+          width: 100%;
+          content: '';
+          display: block;
+          transition: all ease-in-out .4s;
+          background-color: map-get($colors, primary);
+        }
+      }
+      &:hover {
+        color: map-get($colors, primary);
+      }
+    }
+  }
 }

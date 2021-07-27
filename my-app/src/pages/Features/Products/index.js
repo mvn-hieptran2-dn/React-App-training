@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import product from '../../../assets/img/product.jpg';
+import { FaChevronRight } from "react-icons/fa";
+import { FaAngleLeft } from "react-icons/fa";
+import { FaAngleDoubleLeft } from "react-icons/fa";
+import { FaAngleDoubleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-  const pages = [1, 2, 3];
+  const pages = [1, 2];
   const [page, setPage] = useState(1);
 
   useEffect(() => {
@@ -12,6 +16,7 @@ const Products = () => {
       .then(
         e => {
           setProducts(e.data)
+          console.log(e);
         }
       )
   }, [page]);
@@ -26,7 +31,7 @@ const Products = () => {
     <section className="section-product">
       <div className="container">
         <h2 className="section-title">List Product</h2>
-        <ul className="product-list">
+        <ul className="product-list row">
           {
             products.map(e => (
               <li className="product-item col-4" key={e.id}>
@@ -46,15 +51,15 @@ const Products = () => {
             )
           }
         </ul>
-        <ul className="pagination mb-40">
+        <ul className="pagination">
           <li className="page-item" onClick={() => handleChangePage(pages[0])}>
             <span className={page === pages[0] ? "page-link txt-gray" : "page-link pointer"}>
-              <i className="fad fa-chevron-double-left"></i>
+              <i className=""><FaAngleDoubleLeft /></i>
             </span>
           </li>
           <li className="page-item" onClick={() => handleChangePage(page - 1)}>
             <span className={page === pages[0] ? "page-link txt-gray" : "page-link pointer"}>
-              <i className="fas fa-chevron-left"></i>
+              <i className=""><FaAngleLeft /></i>
             </span>
           </li>
           {
@@ -66,12 +71,12 @@ const Products = () => {
           }
           <li className="page-item" onClick={() => handleChangePage(page + 1)}>
             <span className={page === pages[pages.length - 1] ? "page-link txt-gray" : "page-link pointer"}>
-              <i className="fas fa-chevron-right"></i>
+              <i className=""><FaChevronRight /></i>
             </span>
           </li>
           <li className="page-item" onClick={() => handleChangePage(pages[pages.length - 1])}>
             <span className={page === pages[pages.length - 1] ? "page-link txt-gray" : "page-link pointer"}>
-              <i className="fad fa-chevron-double-right"></i>
+              <i className=""><FaAngleDoubleRight /></i>
             </span>
           </li>
         </ul>
