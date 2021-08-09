@@ -22,12 +22,12 @@
     @include pxRem(width, 35);
     @include pxRem(height, 35);
     @include pxRem(line-height, 35);
-    background-color: map-get($colors, header);
+    // background-color: map-get($colors, header);
     text-align: center;
     @include pxRem(margin, 0 5);
     span {
       @include pxRem(font-size, 18);
-      color: map-get($colors, white);
+      color: map-get($colors, #000);
       &.active {
         color: map-get($colors, primary);
       }
@@ -49,5 +49,25 @@
   .product-price {
     @include pxRem(margin, 5 0);
     @include pxRem(font-size, 20);
+  }
+}
+
+.product-btn {
+  @include pxRem(margin-top, 5);
+}
+
+.product-image {
+  position: relative;
+  display: block;
+  .product-fav {
+    @include pxRem(top, 10);
+    @include pxRem(right, 10);
+    @include pxRem(font-size, 22);
+    position: absolute;
+    z-index: 2;
+    color: map-get($colors, white);
+    &.active {
+      color: red;
+    }
   }
 }

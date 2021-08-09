@@ -48,3 +48,21 @@
     }
   }
 }
+
+.wrap-fav-couter {
+  position: relative;
+  span {
+    @include pxRem(top, -10);
+    @include pxRem(left, -10);
+    @include pxRem(height, 20);
+    @include pxRem(padding,0 6);
+    @include pxRem(font-size, 15);
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+    background-color: red;
+    justify-content: center;
+    color: map-get($colors, white);
+  }
+}
