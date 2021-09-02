@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import HeroBnaner from './../../../components/HeroBanner';
 import product from '../../../assets/img/product.jpg';
+import { FaHeart } from 'react-icons/fa';
 
 const Home = () => {
   const products = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  
   return (
     <div>
       <HeroBnaner />
@@ -17,6 +19,7 @@ const Home = () => {
                   <div className="product-wrap">
                     <Link to="/products" className="product-image">
                       <img src={product} />
+                      {/* <span className="product-fav"><FaHeart /></span> */}
                     </Link>
                     <div className="product-card">
                       <h4 className="product-name">Mercedes Benz</h4>
