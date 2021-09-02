@@ -1,19 +1,30 @@
-import logo from './logo.svg';
-import React, { Component } from 'react';
-import './App.css';
+import Features from './pages/Features';
+import Auth from './pages/Auth';
+import Account from './pages/Account';
 import Header from './components/Header';
-import Main from './components/Main'
 import Footer from './components/Footer';
+import { Switch, Route } from "react-router-dom";
+import PrivateRoute from './core/PrivateRoute';
 
 function App() {
   return (
-    <div className="App">
-      <div className="App">
-        <Header />
-        <Main />
-        <Footer />
-      </div>
-    </div>
+    <>
+      <Header />
+      <main className="page-main">
+        <Switch>
+          <PrivateRoute path="/account">
+            <Account />
+          </PrivateRoute>
+          <Route path="/auth">
+            <Auth />
+          </Route>
+          <Route path="/">
+            <Features />
+          </Route>
+        </Switch>
+      </main>
+      <Footer />
+    </>
   );
 }
 

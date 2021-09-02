@@ -1,0 +1,13 @@
+.footer-page {
+  height: 80px;
+  background-color: map-get($colors, header);
+  p {
+    @include pxRem(font-size, 20);
+    @include pxRem(line-height, 80);
+    color:  map-get($colors, white);
+  }
+  .footer-box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
