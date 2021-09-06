@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { toggle } from '../../../store/favSlice';
-import { FaAngleRight, 
-        FaHeart, 
-        FaAngleLeft, 
-        FaAngleDoubleLeft, 
-        FaAngleDoubleRight 
-} from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -28,9 +23,6 @@ const Products = () => {
     { id: 13, name: 'Mercedes GLB 200 AMG 2021', image: require('../../../assets/img/productMec/detail/13.jpeg').default, price: 'Contact', favs: false },
     { id: 14, name: 'Mercedes GLE 450 4 Matic', image: require('../../../assets/img/productMec/detail/14.jpeg').default, price: '4.409.000.000₫', favs: false },
   ]);
-  // const pages = Array.from({ length: Math.ceil(products.length / 6) }, (v, k) => k + 1);
-  const [page, setPage] = useState(1);
-  const pages = [1, 2];
 
   // useEffect(() => {
   //   setProducts(products.slice((page - 1) * 6, page * 6));

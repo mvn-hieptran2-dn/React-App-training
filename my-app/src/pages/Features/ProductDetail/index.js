@@ -1,9 +1,6 @@
 import React from 'react';
 import logo from '../../../assets/img/product.jpg';
 import { useParams } from 'react-router-dom';
-import { increment, decrement } from '../../../store/couterSlice';
-import { useDispatch, useSelector } from 'react-redux';
-import { FaHeart } from 'react-icons/fa';
 
 const ProductDetail = () => {
   const { id } = useParams();
