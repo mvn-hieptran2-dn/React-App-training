@@ -25,8 +25,8 @@ const ProductDetail = () => {
                 tempor incididunt ut labore et dolore magna
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna</p>
-              <p className="product-price">1.800.000đ</p>
-              <button className="btn">Add to cart</button>
+              <p className="product-price">Price: <span className="text-red">2.800.000đ</span></p>
+              {/* <button className="btn">Add to cart</button> */}
             </div>
           </div>
         </div>
