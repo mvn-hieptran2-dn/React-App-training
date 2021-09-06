@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import HeroBnaner from './../../../components/HeroBanner';
 // import product from '../../../assets/img/product.jpg';
-import { FaStar } from 'react-icons/fa';
 
 const Home = () => {
   const products = [

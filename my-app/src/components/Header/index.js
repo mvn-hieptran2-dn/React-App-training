@@ -1,7 +1,7 @@
 import React from 'react';
 import logoHeader from './../../assets/img/logo.svg';
-import { FaCartArrowDown, FaUserAlt, FaHeart } from "react-icons/fa";
-import { NavLink, Link } from 'react-router-dom';
+import { FaUserAlt, FaHeart } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const Header = () => {
