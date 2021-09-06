@@ -34,7 +34,7 @@ const Home = () => {
                         tempor incididunt ut labore et dolore magna</p>
                       <p className="product-price">Price From: <span className="text-red">{e.price}</span></p>
                     </div>
-                    <a href="" className="product-btn"><i className="fas fa-cart-plus"></i></a>
+                    {/* <a className="product-btn"><i className="fas fa-cart-plus"></i></a> */}
                   </div>
                 </li>
               )
