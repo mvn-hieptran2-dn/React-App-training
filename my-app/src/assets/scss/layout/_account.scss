@@ -2,6 +2,8 @@
   @include pxRem(padding, 80 0);
 }
 .section-account {
+  @include pxRem(padding, 50 0);
+  text-align: center;
   .btn {
     @include pxRem(margin-top, 20);
     @include pxRem(max-width, 200);

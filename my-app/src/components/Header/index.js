@@ -40,7 +40,7 @@ const Header = () => {
               </span>
             </NavLink></li>
             <li><NavLink to="/account"><FaUserAlt /></NavLink></li>
-            <li><NavLink to="/"><FaCartArrowDown /></NavLink></li>
+            {/* <li><NavLink to="/"><FaCartArrowDown /></NavLink></li> */}
           </ul>
         </div>
       </div>

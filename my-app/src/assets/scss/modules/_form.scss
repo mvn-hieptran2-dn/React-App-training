@@ -105,7 +105,7 @@ textarea {
 /* form-login */
 .form-login {
   @include pxRem(max-width, 400);
-  @include pxRem(padding, 80 0);
+  @include pxRem(padding, 150 0 0);
   margin: 0 auto;
   h1 {
     @include pxRem(margin-bottom, 20);

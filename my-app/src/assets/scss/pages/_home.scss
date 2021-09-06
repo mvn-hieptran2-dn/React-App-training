@@ -25,6 +25,6 @@
   }
 }
 
-.section-product {
-  @include pxRem(padding, 50 0);
+.text-red {
+  color: map-get($colors, red);
 }

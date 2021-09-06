@@ -1,5 +1,8 @@
 .header-page {
   height: 90px;
+  // position: fixed;
+  width: 100%;
+  z-index: 99;
   background-color: map-get($colors, header);
   .social-list {
     display: flex;
