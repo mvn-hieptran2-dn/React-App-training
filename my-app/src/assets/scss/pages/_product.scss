@@ -14,10 +14,10 @@
   }
   .product-wrap {
     @include pxRem(padding, 10);
-    box-shadow: 0 3px 6px -4px #000010, 0 3px 6px #000017;
+    box-shadow: 0 3px 6px -4px #00000029, 0 3px 6px #0000003b;
     transition: all ease-in-out .3s;
     &:hover {
-      box-shadow: 0 10px 20px #000013, 0 6px 6px #000016;
+      box-shadow: 0 10px 20px #00000030, 0 6px 6px #00000038;
     }
   }
   
