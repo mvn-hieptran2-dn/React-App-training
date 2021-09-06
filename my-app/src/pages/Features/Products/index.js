@@ -58,7 +58,7 @@ const Products = () => {
                 <div className="product-wrap">
                   <Link to={`/product/${e.id}`} className="product-image">
                     <div className="thumb-img">
-                      <img src={e.image} />
+                      <img src={e.image} alt="img-product" />
                     </div>
                     <span className={`product-fav ${e.favs ? 'active' : ''}`} onClick={(event) => handleFav(event, e.id)}><FaHeart /></span>
                   </Link>
